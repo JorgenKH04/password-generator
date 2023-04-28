@@ -5,6 +5,9 @@ let pass1 = document.querySelector("#pass1");
 let pass2 = document.querySelector("#pass2");
 function randomPw() {
   let passLength = document.querySelector("#input-length").value;
+  if (passLength > 21) {
+    passLength = 21;
+  }
   pass1.textContent = "";
   pass2.textContent = "";
   for (let i = 0; i < passLength; i++) {
