@@ -1,0 +1,106 @@
+body {
+  display: flex;
+  justify-content: center;
+  margin: 0;
+  text-align: start;
+  margin-top: 40px;
+  font-family: "Inter", sans-serif;
+  color: #d5d4d8;
+}
+
+h1 {
+  font-family: "Karla", sans-serif;
+  color: #ffffff;
+  font-size: 40px;
+  font-weight: 800;
+  margin: 10px auto 10px auto;
+}
+
+p {
+  margin: 0;
+}
+
+#flavor-text {
+  margin: 10px auto 51px 52px;
+  font-weight: 400;
+  font-size: 20px;
+}
+
+#header {
+  margin: 115px auto 0px 52px;
+}
+
+#header-line1 {
+  margin: 0;
+}
+
+#header-line2 {
+  color: #4adf86;
+  margin-top: 0;
+}
+
+#password-gen {
+  width: 550px;
+  height: 550px;
+  background: #1f2937;
+}
+
+#gen-btn {
+  background: #10b981;
+  color: #ffffff;
+  margin: 10px auto 0px 52px;
+  font-weight: 500;
+  border: none;
+  border-radius: 6px;
+  padding: 9px 17px 9px 15px;
+}
+
+#outputdiv {
+  margin: 35px auto 20px 52px;
+  width: 446px;
+  display: flex;
+  justify-content: space-between;
+  border-top: 1px solid #2f3e53;
+}
+
+#pass1,
+#pass2 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: #273549;
+  border-radius: 6px;
+  width: 211px;
+  height: 39px;
+  margin-top: 35px;
+  font-weight: 500;
+  color: #55f991;
+}
+
+#pass-edit {
+  display: flex;
+  flex-direction: flex;
+  justify-content: space-between;
+}
+
+#pass-length {
+  margin: 15px 52px 10px 52px;
+}
+
+#input-length {
+  padding: 5px 10px;
+  width: 40px;
+  background-color: #273549;
+  border: none;
+  color: #ffffff;
+}
+
+#txt-length {
+  margin-bottom: 5px;
+}
+
+/* #check {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+} */
