@@ -5,7 +5,7 @@ let pass1 = document.querySelector("#pass1");
 let pass2 = document.querySelector("#pass2");
 function randomPw() {
   let passLength = document.querySelector("#input-length").value;
-  if (passLength > 21) {
+  if (passLength > 21 || passLength < 1) {
     passLength = 21;
   }
   pass1.textContent = "";
@@ -18,13 +18,18 @@ function randomPw() {
   }
 }
 function copyPw1() {
-  navigator.clipboard.writeText(pass1.textContent);
-  pass1.textContent = "Copied";
+  if (pass1.textContent !== "Copied") {
+    navigator.clipboard.writeText(pass1.textContent);
+    pass1.textContent = "Copied";
+  }
 }
 
 function copyPw2() {
-  navigator.clipboard.writeText(pass2.textContent);
-  pass2.textContent = "Copied";
+  if (pass2.textContent !== "Copied") {
+    navigator.clipboard.writeText(pass2.textContent);
+    pass2.textContent = "Copied";
+  }
 }
+
 pass1.onclick = copyPw1;
 pass2.onclick = copyPw2;
